@@ -6,9 +6,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     
-    public static List<Bopit> AudioList = new List<Bopit>();
+    public List<Bopit> AudioList = new List<Bopit>();
 
-    public static GameManager instance; 
+    public GameManager instance; 
     // Start is called before the first frame update
 
     private void Awake()
