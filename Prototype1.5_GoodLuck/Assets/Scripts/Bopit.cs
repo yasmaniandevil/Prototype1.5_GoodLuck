@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Bopit : MonoBehaviour
 {
-
+    
     private AudioSource _audioSource;
-    bool isPlaying = false;
+    
     // Start is called before the first frame update
     void Start()
     {

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,5 +15,19 @@ public class Audio : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void OnMouseDown()
+    {
+        //starting at 0 in the list
+        //how long are we going thru the list
+        //while i is less than the number of objects 
+        //incrementing it by 1
+        for(int i = 0; i < GameManager.AudioList.Count; i++)
+        {
+            //i made a list of bopit scripts
+            GameManager.AudioList[i].OnClick();
+        }
+        //GameManager.AudioList
     }
 }
