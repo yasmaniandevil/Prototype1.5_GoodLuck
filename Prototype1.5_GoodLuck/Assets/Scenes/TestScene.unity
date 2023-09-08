@@ -412,18 +412,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1008802948}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &24775111 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7071265496809384116, guid: c9a3de3893096c846a703e1f42b0c7a2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1050243985}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9997444e15e178b449bed4e1d01813a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &48098236
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2006,18 +1994,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ac884ca894831b4d933a79d417f3c1c, type: 3}
---- !u!114 &374979522 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7071265496809384116, guid: c9a3de3893096c846a703e1f42b0c7a2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1067333373}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9997444e15e178b449bed4e1d01813a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &377319549 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8ac884ca894831b4d933a79d417f3c1c,
@@ -3766,18 +3742,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ac884ca894831b4d933a79d417f3c1c, type: 3}
---- !u!114 &662630651 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7071265496809384116, guid: c9a3de3893096c846a703e1f42b0c7a2,
-    type: 3}
-  m_PrefabInstance: {fileID: 7940517710407702498}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9997444e15e178b449bed4e1d01813a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &667137518 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8ac884ca894831b4d933a79d417f3c1c,
@@ -9103,16 +9067,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dea61b858d42c146910ce61cf269c56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioController: {fileID: 394951909}
-  AudioList:
-  - {fileID: 662630651}
-  - {fileID: 24775111}
-  - {fileID: 374979522}
-  playerInput:
-  - {fileID: 662630651}
-  - {fileID: 24775111}
-  - {fileID: 374979522}
-  instance: {fileID: 1862114734}
+  SoundsList: []
+  clickableCubes: []
+  audioSource: {fileID: 0}
+  loseSound: {fileID: 0}
 --- !u!1001 &1876524765
 PrefabInstance:
   m_ObjectHideFlags: 0

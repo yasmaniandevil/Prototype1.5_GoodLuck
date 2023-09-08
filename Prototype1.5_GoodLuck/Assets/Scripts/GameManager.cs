@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
         clickableCubes[0].SetActive(false);
         yield return new WaitForSeconds(2f);
         playerTaskList.Add(Random.Range(0,4));
-        clickableCubes[0].SetActive(true);
+        clickableCubes[4].SetActive(true);
         yield return null;
     }
 }

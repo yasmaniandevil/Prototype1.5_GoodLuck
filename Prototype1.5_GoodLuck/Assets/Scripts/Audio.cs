@@ -51,7 +51,7 @@ public class Audio : MonoBehaviour
         //start coroutine which is called runAudioList
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
-            StartCoroutine(runAudioList());
+            //StartCoroutine(runAudioList());
         }
     }
 
