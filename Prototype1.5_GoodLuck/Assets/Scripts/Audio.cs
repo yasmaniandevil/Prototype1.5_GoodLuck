@@ -14,14 +14,6 @@ public class Audio : MonoBehaviour
     
     //when this is called it goes through the Sequence to match list
     //and calls the onclick function
-    public void TriggerAudioSequence()
-    {
-        currentIndex = 0;
-        foreach (Bopit cube in sequenceToMatch)
-        {
-            cube.OnClick();
-        }
-    }
     
     void Start()
     {
@@ -32,7 +24,7 @@ public class Audio : MonoBehaviour
     }
     
     //Coroutine with for loop inside it
-    private IEnumerator runAudioList()
+    /*private IEnumerator runAudioList()
     {
         for(int i = 0; i < gm.AudioList.Count; i++)
         { 
@@ -50,7 +42,7 @@ public class Audio : MonoBehaviour
         }
         
         StopAllCoroutines();
-    }
+    }*/
 
     // Update is called once per frame
     void Update()
