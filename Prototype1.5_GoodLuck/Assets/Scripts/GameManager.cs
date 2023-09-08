@@ -6,6 +6,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     
+    //script Bopit make a list of these scripts
+    //list is in inspector
+    //add the cubes that contain the bopit scripts
     public List<Bopit> AudioList = new List<Bopit>();
 
     public GameManager instance; 

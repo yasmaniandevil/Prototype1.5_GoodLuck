@@ -10,10 +10,13 @@ public class Audio : MonoBehaviour
     private GameManager gm;
     void Start()
     {
+        //gets the script game manager by finding the game object that holds it
+        //stores the script in gm
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         
     }
-
+    
+    //Coroutine with for loop inside it
     private IEnumerator runAudioList()
     {
         for(int i = 0; i < gm.AudioList.Count; i++)
@@ -24,6 +27,9 @@ public class Audio : MonoBehaviour
             //while i is less than the number of objects 
             //incrementing it by 1
             Debug.Log(i);
+            //gm which is the component script on the game object
+           //Game manager. Audio list which is from game manager and onclick which is from bopoit
+           //on click is accessed thru game manager bc we added the cubes that hold tht script bopoit
             gm.AudioList[i].OnClick();
             yield return new WaitForSeconds(2.0f);
         }
@@ -34,6 +40,8 @@ public class Audio : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if the box is clicked
+        //start coroutine which is called runAudioList
         if (Mouse.current.leftButton.isPressed)
         {
             StartCoroutine(runAudioList());

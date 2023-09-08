@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class Bopit : MonoBehaviour
 {
-    
+    private Color lerpedColor = Color.magenta;
+    private Renderer _renderer;
     private AudioSource _audioSource;
     
     // Start is called before the first frame update
     void Start()
     {
         _audioSource = gameObject.GetComponent<AudioSource>();
+        _renderer = GetComponent<Renderer>();
     }
 
     // Update is called once per frame
@@ -22,6 +24,8 @@ public class Bopit : MonoBehaviour
     public void OnClick()
     {
         _audioSource.Play();
+        lerpedColor = Color.Lerp(Color.white, Color.black, Mathf.PingPong(Time.time, 1));
+        _renderer.material.color = lerpedColor;
         
     }
     
