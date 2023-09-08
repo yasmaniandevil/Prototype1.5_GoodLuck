@@ -8,6 +8,21 @@ public class Audio : MonoBehaviour
 {
     // Start is called before the first frame update
     private GameManager gm;
+    //contains Bopit Scripts that are attached to cubes 
+    public List<Bopit> sequenceToMatch = new List<Bopit>();
+    private int currentIndex = 0;
+    
+    //when this is called it goes through the Sequence to match list
+    //and calls the onclick function
+    public void TriggerAudioSequence()
+    {
+        currentIndex = 0;
+        foreach (Bopit cube in sequenceToMatch)
+        {
+            cube.OnClick();
+        }
+    }
+    
     void Start()
     {
         //gets the script game manager by finding the game object that holds it
@@ -20,13 +35,13 @@ public class Audio : MonoBehaviour
     private IEnumerator runAudioList()
     {
         for(int i = 0; i < gm.AudioList.Count; i++)
-        {
-            Debug.Log("clicy");
+        { 
+            //Debug.Log("clicy");
             //starting at 0 in the list
             //how long are we going thru the list
             //while i is less than the number of objects 
             //incrementing it by 1
-            Debug.Log(i);
+            //Debug.Log(i);
             //gm which is the component script on the game object
            //Game manager. Audio list which is from game manager and onclick which is from bopoit
            //on click is accessed thru game manager bc we added the cubes that hold tht script bopoit
@@ -42,7 +57,7 @@ public class Audio : MonoBehaviour
     {
         //if the box is clicked
         //start coroutine which is called runAudioList
-        if (Mouse.current.leftButton.isPressed)
+        if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             StartCoroutine(runAudioList());
         }
